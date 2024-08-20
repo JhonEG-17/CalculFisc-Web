@@ -3,50 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Impuestos</title>
+    <title>CalculFisc</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Tax Calculator</h1>
-        
-    </header>
-    <main>
-        <section>
-            <article>
-                <div class="container_presentation">
-                    <h1>
-                        Web Tax Calculator
-                    </h1>
-                    <div class="container_description">
-                        <p>
-                            Calculate your taxes with this amazing free tool, if you don't know where to get the necessary data, click on the 
-                            <a href="assets/">link</a>.
-                        </p>
-                    </div>
-                    
-                </div>
+    <section class="home">
+        <article class="article-home">
+            <header>
+                <h1>CalculFisc</h1>
+                <h2>La mejor herramienta para mejorar tus finanzas</h2>
+            </header>
+            <footer class="article-footer">
+                <button>Prueba ahora</button>
+            </footer>
+        </article>
+    </section>
+    <section class="section-desktop">
+        <article class="article-desktop">
+            <header><h1>Disponible en Windows</h1></header>
+            <div><p>Diseñamos y creamos una aplicación intuitiva y efectiva que nuestros usuarios puedan utilizar Calcul Fisc de forma comoda, instalarlo y utilizarlo es súper faci!. Solo descarga, instala y comienza a calcular!</p></div>
+            <footer class="article-footer">
+                <button>Obtener ya</button>
+            </footer>
+        </article>
+        <aside class="aside-desktop">
+            <picture>
+                <img src="#" alt="imagen de muestra de una laptop con el progrmama calculfisc abierto">
+            </picture>
+        </aside>
+    </section>
+    <section class="section-movil">
+        <article class="article-movil">
+            <header>
+                <h1>CalculFisc Web</h1>
+            </header>
+            <div>
+                <p>
+                    Tenemos nuestra version web capaz de hacer los calculos de una persona en cualquier parte del mundo lo unico que necesitas es un dispositivo móvil, acceso a internet y el resto dejaselo a Calcul Fisc.<br><br>
+                    Siempre podrás utilizar la version web de Calcul Fisc desde nuestro sitio web esta version es completamente gratuita.
+                </p>
+            </div>
+            <footer class="article-footer">
+                <button>Usar Ahora</button>
+            </footer>
+        </article>
+        <aside class="aside-movil">
+            <picture>
+                <img src="#" alt="imagen de muestra de un celular con el progrmama CalculFisc Web abierto">
+            </picture>
+        </aside>
+    </section>
+    <section class="section-result">
+        <article class="article-result">
+            <div>
+                <p>This is prime space! Use it to elaborate on your attention-grabbing heading. Explain what this graph is about, share some details, and give just the right amount of information to engage your audience. Treat this paragraph as a caption of sorts to accompany your chart. </p>
+            </div>
+        </article>
+        <aside class="aside-result">
+            <header>
+                <h1>Optimizando tiempos</h1>
+            </header>
+            <div>
+                <picture>
+                    <img src="assets/img/Grafic.png" alt="barra de porcentaje">
+                </picture>
+            </div>
+        </aside>
+    </section>
+    <section class="section-calcweb">
+        <article>
+            <div class="Form-calculadora">
                 <form id="calculadoraForm">
-                    <div class="element_form">
-                        <label for="nombre">Employee Name:</label><br>
-                        <input type="text" id="nombre" required>
-                    </div>
-                    <div class="element_form">
-                        <label for="sueldo">Employee's salary:</label><br>
-                        <input type="number" id="sueldo" required>
-                    </div>
-                    <div class="element_form">
-                        <label for="cuotap">Loan Fee:</label><br>
-                        <input type="number" id="cuotap" required>
-                    </div>
-                    <div class="element_form">
-                        <label for="gastosm">Medical expenses for the month:</label><br>
-                        <input type="number" id="gastosm" required>
-                    </div>
-                    <div class="element_form">
-                        <label for="gastosin">Disability expenses for the month:</label><br>
-                        <input type="number" id="gastosin" required>
-                    </div>
+                    <input class="element_form" type="text" id="nombre" placeholder="Employee Name" required>
+                    <input class="element_form" type="number" id="sueldo" placeholder="Employee's salary" required>
+                    <input class="element_form" type="number" id="cuotap" placeholder="Loan Fee" required>
+                    <input class="element_form" type="number" id="gastosm" placeholder="Medical expenses for the month:" required>
+                    <input class="element_form" type="number" id="gastosin" placeholder="Disability expenses for the month" required>
                     <div class="buttom_form">
                         <button class="btn_calcu" type="submit">Calculate</button>
                     </div>
@@ -54,156 +86,190 @@
                         <a href="">Privacy Policy.</a>
                     </div>
                 </form>
-                
-                <div class="resultado" id="resultado" style="display: none;">
-                    <div class="container_results">
-                        <h2>Results</h2>
-                        <p id="bandasalarial"></p>
-                        <p id="retencionISR"></p>
-                        <p id="retencionIMSS"></p>
-                        <p id="sueldoNeto"></p>
+            </div>
+            
+        </article>
+        
+        <aside class="resultado" id="resultado" style="display: none;">
+            <div class="container_results">
+                <h2>Results</h2>
+                <p id="bandasalarial"></p>
+                <p id="retencionISR"></p>
+                <p id="retencionIMSS"></p>
+                <p id="sueldoNeto"></p>
+            </div>
+            
+        </aside>
+    </section>
+    <section class="section_download">
+        <article>
+            <h1>
+                Download desktop version offline.
+            </h1>
+            <p>Choose the burning version that suits your needs.</p>
+        </article>
+        <aside>
+            <div class="aling_buttoms">
+                <div class="container_buttoms">
+                    <h1>For me.</h1>
+                    <button class="download_buttom">
+                        <a href="assets/program_instaler/Individual_version/Calculadora-de-impuestos.exe">Download</a>
+                    </button>
+                </div>
+                <div class="container_buttoms">
+                    <h1>Business.</h1>
+                    <button class="download_buttom">
+                        <a href="assets/program_instaler/Empresarial_version/Calculadora-de-impuestos.exe">Download</a>
+                    </button>
+                </div>
+            </div>
+            <div class="container_political">
+                <a href="">Privacy Policy.</a>
+            </div>
+        </aside>
+    </section>
+    <section>
+        <article>
+            <div class="section_functions">
+                <div class="functions_presentation">
+                    <div class="functions_title">
+                        <h1>
+                            Make tax accounting easier and take your business to the next level
+                        </h1>
+                    </div>
+                    <div class="functions_text">
+                        <p>
+                            Improve your experience with our calculator, get to know its capabilities better. Increase efficiency by automating accounting and HR activities, insert data, calculate and voila, you will keep your company at the forefront of technology.
+                        </p>
+                    </div>
+                    <div class="containers_functions">
+                        <div class="function">
+                            <div class="name_function">
+                                <h1>
+
+                                </h1>
+                            </div>
+                            <div class="description_function">
+                                <p>
+
+                                </p>
+                            </div>
+                            <div class="img_function">
+                                <img class="function_img" src="" >
+                            </div>
+
+                        </div>
+                        <div class="function">
+                            <div class="name_function">
+                                <h1>
+
+                                </h1>
+                            </div>
+                            <div class="description_function">
+                                <p>
+
+                                </p>
+                            </div>
+                            <div class="img_function">
+                                <img class="function_img" src="" >
+                            </div>
+
+                        </div>
+                        <div class="function">
+                            <div class="name_function">
+                                <h1>
+
+                                </h1>
+                            </div>
+                            <div class="description_function">
+                                <p>
+
+                                </p>
+                            </div>
+                            <div class="img_function">
+                                <img class="function_img" src="" >
+                            </div>
+
+                        </div>
+                        <div class="function">
+                            <div class="name_function">
+                                <h1>
+
+                                </h1>
+                            </div>
+                            <div class="description_function">
+                                <p>
+
+                                </p>
+                            </div>
+                            <div class="img_function">
+                                <img class="function_img" src="" >
+                            </div>
+
+                        </div>
+
                     </div>
                     
                 </div>
-                
-            </article>
-            <article class="section_download">
-                <div >
-                    <h1>
-                        Download desktop version offline.
-                    </h1>
-                    <p>Choose the burning version that suits your needs.</p>
-                    <div class="aling_buttoms">
-                        <div class="container_buttoms">
-                            <h1>For me.</h1>
-                            <button class="download_buttom">
-                                <a href="assets/program_instaler/Individual_version/Calculadora-de-impuestos.exe">Download</a>
-                            </button>
-                        </div>
-                        <div class="container_buttoms">
-                            <h1>Business.</h1>
-                            <button class="download_buttom">
-                                <a href="assets/program_instaler/Empresarial_version/Calculadora-de-impuestos.exe">Download</a>
-                            </button>
-                        </div>
-                        
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <div class="section_references">
+                <div class="container_references">
+                    <div class="title_references">
+                        <h1>
+                            The trusted solution for hundreds of millions of users
+                        </h1>
                     </div>
-                    <div class="container_political">
-                        <a href="">Privacy Policy.</a>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="section_functions">
-                    <div class="functions_presentation">
-                        <div class="functions_title">
-                            <h1>
-                                Make tax accounting easier and take your business to the next level
-                            </h1>
-                        </div>
-                        <div class="functions_text">
-                            <p>
-                                Improve your experience with our calculator, get to know its capabilities better. Increase efficiency by automating accounting and HR activities, insert data, calculate and voila, you will keep your company at the forefront of technology.
-                            </p>
-                        </div>
-                        <div class="containers_functions">
-                            <div class="function">
-                                <div class="name_function">
-                                    <h1>
+                    <div class="title_count_downloads">
+                        <p>
+                            Downloads
+                        </p>
+                        <div class="count_downloads">
 
-                                    </h1>
-                                </div>
-                                <div class="description_function">
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <div class="img_function">
-                                    <img class="function_img" src="" >
-                                </div>
-
-                            </div>
-                            <div class="function">
-                                <div class="name_function">
-                                    <h1>
-
-                                    </h1>
-                                </div>
-                                <div class="description_function">
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <div class="img_function">
-                                    <img class="function_img" src="" >
-                                </div>
-
-                            </div>
-                            <div class="function">
-                                <div class="name_function">
-                                    <h1>
-
-                                    </h1>
-                                </div>
-                                <div class="description_function">
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <div class="img_function">
-                                    <img class="function_img" src="" >
-                                </div>
-
-                            </div>
-                            <div class="function">
-                                <div class="name_function">
-                                    <h1>
-
-                                    </h1>
-                                </div>
-                                <div class="description_function">
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <div class="img_function">
-                                    <img class="function_img" src="" >
-                                </div>
-
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="section_references">
-                    <div class="container_references">
-                        <div class="title_references">
-                            <h1>
-                                The trusted solution for hundreds of millions of users
-                            </h1>
-                        </div>
-                        <div class="title_count_downloads">
-                            <p>
-                                Downloads
-                            </p>
-                            <div class="count_downloads">
-
-                            </div>
                         </div>
                     </div>
                 </div>
-            </article>
-            
-            
-        </section>
-        
-    </main>
+            </div>
+        </article>
+    </section>
     <footer>
-        <div class="footer-content">
-            <p>© 2024 JhonDev. Todos los derechos reservados.</p>
+        <div class="legal">
+            <div class="piliticas">
+                <ul>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
+            <div class="information">
+                <ul>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
+            <div class="contact"><ul>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+            </ul></div>
+        </div>
+        <div class="copy">
+            <p>
+                © 2024 JEG Dev Studios. Todos los derechos reservados.
+            </p>
         </div>
     </footer>
     <script src="js/script.js"></script>

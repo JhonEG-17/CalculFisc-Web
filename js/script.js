@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const percentage = 45; // Cambia este valor para ajustar el porcentaje
+    const angle = percentage * 3.6; // 360 grados / 100%
+
+    const valueBar = document.querySelector('.value-bar');
+
+    // Actualiza la rotación para el porcentaje dado
+    valueBar.style.transform = `rotate(${angle}deg)`;
+
+    // Actualiza el texto del porcentaje
+    document.getElementById('percentage').textContent = `${percentage}%`;
+});
+
+
 document.getElementById("calculadoraForm").addEventListener("submit", function(event) {
     event.preventDefault();
     calcularImpuestos();
