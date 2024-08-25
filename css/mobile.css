@@ -16,8 +16,10 @@
         font-size: clamp(14px, 2.5vw, 28px);
     }
 
-    .home .article-home {
-        padding: 10px;
+    .home {
+        .article-home {
+            padding: 10px;
+        }
     }
 
     .section-desktop {

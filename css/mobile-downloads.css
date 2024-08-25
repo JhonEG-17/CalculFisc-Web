@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    body {
+        font-size: clamp(12px, 1.5vw, 18px);
+    }
+    
+    h1 {
+        font-size: clamp(36px, 6vw, 72px);
+    }
+    
+    h2 {
+        font-size: clamp(20px, 3vw, 40px);
+    }
+    
+    h3 {
+        font-size: clamp(14px, 2.5vw, 28px);
+    }
+    .section_download {
+        padding: 15px;
+        .article-download {
+            height: 15%;
+        }
+        .aside-download {
+            .aling_buttoms {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+    footer {
+        .legal {
+            grid-template-columns: auto auto; /* Adaptación para 1 columna en móvil */
+            
+        }
+    }
+}

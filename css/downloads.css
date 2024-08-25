@@ -91,7 +91,7 @@
                     width: 100%;
                     height: auto;
                 }
-                div {
+                picture {
                     display: flex;
                     align-items: center;
                     justify-content: center;
