@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+h1 {
+    font-size: clamp(48px, 8vw, 96px);
+}
+h2 {
+    font-size: clamp(24px, 4vw, 48px);
+}
+
+h3 {
+    font-size: clamp(16px, 2vw, 32px);
+}
+p {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+span {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+a {
+    font-size: clamp(12px, 1.2vw, 18px);
+}
+
+body {
+    background-color: #004aad;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100dvh;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+    width: 100%;
+    height: auto;
+    .legal {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 20px;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        .politicas {
+            ul {
+                list-style: none;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 20px;
+            ul {
+                display: grid;
+                align-items: center;
+                justify-content: space-evenly;
+                list-style: none;
+                grid-template-columns: auto auto auto auto;
+                width: 100%;
+                height: auto;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #101010;
+                    border: 1px solid #fff;
+                    border-radius: 15px;
+                    padding: 5px;
+                    max-width: 45px;
+                    width: 100%;
+                    max-height: 45px;
+                    height: 100%;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+                li:hover {
+                    background: #fff;
+                    a {
+                        color: #101010;
+                    }
+                }
+            }
+        }
+    }
+    .copy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            a {
+                display: inline;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                color: #fff;
+                font-size: clamp(14px, 2vw, 20px);
+                text-decoration: none;
+            }
+        }
+    }
+}

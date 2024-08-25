@@ -1,16 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const percentage = 45; // Cambia este valor para ajustar el porcentaje
-    const angle = percentage * 3.6; // 360 grados / 100%
-
-    const valueBar = document.querySelector('.value-bar');
-
-    // Actualiza la rotación para el porcentaje dado
-    valueBar.style.transform = `rotate(${angle}deg)`;
-
-    // Actualiza el texto del porcentaje
-    document.getElementById('percentage').textContent = `${percentage}%`;
-});
-
 
 document.getElementById("calculadoraForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -22,7 +9,6 @@ function calcularImpuestos() {
     var cuotap = parseFloat(document.getElementById("cuotap").value);
     var gastosm = parseFloat(document.getElementById("gastosm").value);
     var gastosin = parseFloat(document.getElementById("gastosin").value);
-    var nombre = document.getElementById("nombre").value;
 
     var bandasalarial = obtenerBandaSalarial(sueldo);
     var isr = calcularISR(sueldo);
@@ -106,3 +92,27 @@ function calcularIMSS(sueldo, cuotap, gastosm, gastosin) {
 
     return CAO + cuotap + gastosm + gastosin;
 }
+
+/*// Configuración de Firebase
+const firebaseConfig = {
+    apiKey: "TU_API_KEY",
+    authDomain: "TU_DOMINIO.firebaseapp.com",
+    databaseURL: "https://TU_DOMINIO.firebaseio.com",
+    projectId: "TU_ID_PROYECTO",
+    storageBucket: "TU_BUCKET.appspot.com",
+    messagingSenderId: "TU_ID_MENSAJERIA",
+    appId: "TU_APP_ID"
+};
+
+// Inicializar Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+// Obtener y mostrar el contador de descargas
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadRef = firebase.database().ref('downloads/count');
+    downloadRef.on('value', (snapshot) => {
+        const count = snapshot.val();
+        document.querySelector('.count_downloads').innerText = count || 0;
+    });
+});*/

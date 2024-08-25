@@ -1,0 +1,174 @@
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: clamp(12px, 1.5vw, 18px);
+    }
+
+    h1 {
+        font-size: clamp(36px, 6vw, 72px);
+    }
+
+    h2 {
+        font-size: clamp(20px, 3vw, 40px);
+    }
+
+    h3 {
+        font-size: clamp(14px, 2.5vw, 28px);
+    }
+
+    .home .article-home {
+        padding: 10px;
+    }
+
+    .section-desktop {
+        flex-direction: column-reverse;
+        .article-desktop {
+            width: 100%;
+            height: 40%;
+            padding: 20px;
+            div {
+                padding: 20px 0;
+            }
+        }
+        .aside-desktop {
+            width: 100%;
+            height: 60%;
+            padding: 20px;
+        }
+    }
+    .section-movil {
+        flex-direction: column-reverse;
+        .article-movil {
+            width: 100%;
+            height: 40%;
+            padding: 20px;
+            div {
+                padding: 20px 0;
+            }
+        }
+        .aside-movil {
+            width: 100%;
+            height: 60%;
+            padding: 20px;
+        }
+    }
+
+    .section-functions .functions-list .containers-functions {
+        grid-template-columns: 1fr; /* Adaptación para 1 columna en móvil */
+    }
+
+    .section-result {
+        flex-direction: column-reverse;
+        .article-result {
+            width: 100%;
+            height: 30%;
+            padding: 10px;
+            div {
+                width: 100%;
+            }
+        }
+        .aside-result {
+            width: 100%;
+            height: 70%;
+            padding: 10px;
+            picture {
+                img {
+                    max-width: 350px;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .section-total-download .aside-t-d div {
+        font-size: clamp(30px, 5vw, 60px);
+    }
+
+    .section-calcweb {
+        flex-direction: column;
+        max-width: 100%;
+        article {
+            max-width: 100%;
+            padding: 15px;
+            form {
+                gap: 10px;
+                .element_form {
+                    width: 100%;
+                    max-height: 40px;
+                    height: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: #000;
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #004aad;
+                    border-radius: 15px;
+                    border: none;
+                    cursor: pointer;
+                    color: #fff;
+                    max-width: 180px;
+                    width: 100%;
+                    max-height: 40px;
+                    height: 100%;
+                    padding: 15px 10px;
+                }
+            }
+        }
+        aside {
+            padding: 15px;
+        }
+    }
+
+    footer {
+        .legal {
+            grid-template-columns: auto auto; /* Adaptación para 1 columna en móvil */
+            
+        }
+    }
+}
+
+/* Adaptación para dispositivos móviles en modo horizontal */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    
+
+    
+    p {
+        font-size: clamp(7px, 1vw, 10px);
+    }
+    
+    span {
+        font-size: clamp(7px, 1vw, 10px);
+    }
+    
+    a {
+        font-size: clamp(6px, 0.6vw, 9px);
+    }
+
+    .section-calcweb {
+        max-width: 100%;
+        article {
+            max-width: 100%;
+            padding: 12px;
+            form {
+                gap: 8px;
+                .element_form {
+                    max-height: 35px;
+                    padding: 8px;
+                }
+                button {
+                    max-width: 160px;
+                    max-height: 35px;
+                    padding: 12px 8px;
+                }
+            }
+        }
+        aside {
+            padding: 12px;
+        }
+    }
+}
