@@ -293,10 +293,10 @@
         align-items: center;
         background: #fff;
         color: #000;
-        width: 100%;
-        height: 50%;
+        width: 50%;
+        height: 100%;
         div {
-            width: 70%;
+            width: 100%;
         }
     }
     .aside-result {
@@ -306,8 +306,8 @@
         align-items: center;
         background: #fff;
         color: #000;
-        width: 100%;
-        height: 50%;
+        width: 50%;
+        height: 100%;
         padding: 30px;
         header {
             display: flex;
@@ -329,7 +329,7 @@
             width: 100%;
             height: 70%;
             img {
-                width: 100%;
+                max-width: 100%;
                 height: auto;
                 object-fit: cover;
             }
