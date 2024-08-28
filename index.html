@@ -4,57 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalculFisc</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/mobile.css">
 </head>
 <body>
     <section class="home">
         <article class="article-home">
-            <header>
+            <header class="title-section">
                 <h1>CalculFisc</h1>
                 <h2>La mejor herramienta para mejorar tus finanzas</h2>
             </header>
             <footer class="article-footer">
-                <button><a href="#calculFisc-web">Prueba ahora</a></button>
+                <button class="btn-section">
+                    <a class="url-btn" href="#calculFisc-web">Prueba ahora</a>
+                </button>
             </footer>
         </article>
     </section>
     <section class="section-desktop">
         <article class="article-desktop">
-            <header>
+            <header class="title-section">
                 <h2>Disponible en Windows</h2>
             </header>
-            <div>
+            <div class="text-section">
                 <p>Diseñamos y creamos una aplicación intuitiva y efectiva que nuestros usuarios puedan utilizar Calcul Fisc de forma comoda, instalarlo y utilizarlo es súper faci!. Solo descarga, instala y comienza a calcular!</p>
             </div>
             <footer class="article-footer">
-                <button><a href="pages/downloads.html">Obtener ya</a></button>
+                <button class="btn-section">
+                    <a class="url-btn" href="pages/downloads.html">Obtener ya</a>
+                </button>
             </footer>
         </article>
         <aside class="aside-desktop">
-            <picture>
+            <picture class="container-img">
                 <img src="#" alt="imagen de muestra de una laptop con el progrmama calculfisc abierto">
             </picture>
         </aside>
     </section>
     <section class="section-movil">
         <article class="article-movil">
-            <header>
+            <header class="title-section">
                 <h2>CalculFisc Web</h2>
             </header>
-            <div>
+            <div class="text-section">
                 <p>
-                    Tenemos nuestra version web capaz de hacer los calculos de una persona en cualquier parte del mundo lo unico que necesitas es un dispositivo móvil, acceso a internet y el resto dejaselo a Calcul Fisc.<br><br>
+                    Tenemos nuestra version web capaz de hacer los calculos de una persona en cualquier parte del mundo lo unico que necesitas es un dispositivo móvil, acceso a internet y el resto dejaselo a Calcul Fisc.
+                </p>
+                <p>
                     Siempre podrás utilizar la version web de Calcul Fisc desde nuestro sitio web esta version es completamente gratuita.
                 </p>
             </div>
             <footer class="article-footer">
-                <button><a href="#calculFisc-web">Usar Ahora</a></button>
+                <button  class="btn-section">
+                    <a class="url-btn" href="#calculFisc-web">Usar Ahora</a>
+                </button>
             </footer>
         </article>
         <aside class="aside-movil">
-            <picture>
+            <picture class="container-img">
                 <img src="#" alt="imagen de muestra de un celular con el progrmama CalculFisc Web abierto">
             </picture>
         </aside>
@@ -160,9 +168,9 @@
         </aside>
     </section>
     <section id="calculFisc-web" class="section-calcweb">
-        <article>
+        <article class="article-calcweb">
             <div class="Form-calculadora">
-                <form id="calculadoraForm">
+                <form class="form-clacweb" id="calculadoraForm">
                     <label class="text-form">Salario mensual:</label>
                     <input class="element_form" type="number" id="sueldo" placeholder="0" required>
                     <label class="text-form">Cuota por préstamo mensual:</label>
@@ -174,14 +182,9 @@
                     <div class="buttom_form">
                         <button class="btn_calcu" type="submit">Calculate</button>
                     </div>
-                    <div class="political_form">
-                        <a href="">Privacy Policy.</a>
-                    </div>
                 </form>
             </div>
-            
         </article>
-        
         <aside class="resultado" id="resultado" style="display: none;">
             <div class="container_results">
                 <h2>Results</h2>
@@ -197,43 +200,58 @@
         <div class="legal">
             <div class="politicas">
                 <h3>Avisos Legales</h3>
-                <ul>
-                    <li><a href="#">Politica de Privacidad</a></li>
-                    <li><a href="#">Terminos del servicio</a></li>
-                    <li><a href="#">politicas de cookies</a></li>
-                    <li><a href="#">Preferencias de cookies</a></li>
-                    <li><a href="#">Licencia</a></li>
+                <ul class="list-legal">
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Politica de Privacidad</a>
+                    </li>
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Terminos del servicio</a>
+                    </li>
+                    <li class="element-list">
+                        <a class="url-legal" href="#">politicas de cookies</a>
+                    </li>
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Preferencias de cookies</a>
+                    </li>
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Licencia</a>
+                    </li>
                 </ul>
             </div>
             <div class="politicas">
                 <h3>Conocenos</h3>
-                <ul  style="list-style: none;">
-                    <li><a href="#">Area de clientes</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Ayuda</a></li>
+                <ul class="list-legal">
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Area de clientes</a>
+                    </li>
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Acerca de</a>
+                    </li>
+                    <li class="element-list">
+                        <a class="url-legal" href="#">Ayuda</a>
+                    </li>
                 </ul>
             </div>
             <div class="contact">
                 <h3>Contacto</h3>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <svg  width="auto"  height="auto"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                <ul class="list-social">
+                    <li class="container-icon">
+                        <a class="url-social" href="#">
+                            <svg width="auto"  height="auto"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="container-icon">
+                        <a class="url-social" href="#">
                             <svg width="auto"  height="auto"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="container-icon">
+                        <a class="url-social" href="#">
                             <svg width="auto"  height="auto"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="container-icon">
+                        <a class="url-social" href="#">
                         <svg width="auto"  height="auto"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
                         </a>
                     </li>
@@ -241,8 +259,8 @@
             </div>
         </div>
         <div class="copy">
-            <p>
-                <a href="https://jegdevstudios.github.io/site">© 2024 JEG Dev Studios Todos los derechos reservados.</a>
+            <p class="copy-text">
+                <a class="url-copy" href="https://jegdevstudios.github.io/site">© 2024 JEG Dev Studios Todos los derechos reservados.</a>
             </p>
         </div>
     </footer>

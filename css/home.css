@@ -1,4 +1,3 @@
-
 .home {
     display: flex;
     align-items: center;
@@ -12,7 +11,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        header {
+        .title-section {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -41,7 +40,7 @@
             width: 100%;
             height: auto;
             padding: 20px;
-            button {
+            .btn-section {
                 display: inline-block;
                 position: relative;
                 background-color: #ffffff;
@@ -53,7 +52,7 @@
                 max-height: 60px;
                 height: 100%;
                 padding: 30px 20px;
-                a {
+                .url-btn {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -67,16 +66,15 @@
                     height: 100%;
                 }
             }
-            button:hover {
+            .btn-section:hover {
                 background: #00000042;
-                a {
+                .url-btn {
                     color: #fff;
                 }
             }
         }
     }
 }
-
 .section-desktop {
     .article-desktop {
         display: flex;
@@ -87,12 +85,12 @@
         height: 100%;
         padding: 60px;
         background-image: linear-gradient(#004aad, #5dbde6);
-        header {
+        .title-section {
             display: flex;
             width: 100%;
             height: auto;
         }
-        div {
+        .text-section {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -102,12 +100,12 @@
         }
         .article-footer {
             display: flex;
-            justify-content: left;
+            justify-content: center;
             align-items: center;
             background: transparent;
             width: 100%;
             height: auto;
-            button {
+            .btn-section {
                 display: inline-block;
                 position: relative;
                 background-color: #ffffff;
@@ -119,7 +117,7 @@
                 max-height: 60px;
                 height: 100%;
                 padding: 30px 20px;
-                a {
+                .url-btn {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -133,15 +131,15 @@
                     height: 100%;
                 }
             }
-            button:hover {
+            .btn-section:hover {
                 background: #00000042;
-                a {
+                .url-btn {
                     color: #fff;
                 }
             }
         }
     }
-    aside {
+    .aside-desktop {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -150,6 +148,20 @@
         color: #000;
         width: 60%;
         height: 100%;
+        padding: 60px;
+        .container-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            img {
+                max-width: 305px;
+                width: 100%;
+                max-height: 604px;
+                height: 100%;
+            }
+        }
     }
 }
 .section-movil {
@@ -157,24 +169,25 @@
     .article-movil {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient(#004aad, #5dbde6);
         align-items: center;
         width: 70%;
         height: 100%;
         padding: 60px;
-        background-image: linear-gradient(#004aad, #5dbde6);
-        header {
+        .title-section {
             display: flex;
             width: 100%;
             height: auto;
         }
-        div {
+        .text-section {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: auto;
-            padding: 45px 0;
+            gap: 20px;
         }
         .article-footer {
             display: flex;
@@ -183,7 +196,7 @@
             background: transparent;
             width: 100%;
             height: auto;
-            button {
+            .btn-section {
                 display: inline-block;
                 position: relative;
                 background-color: #ffffff;
@@ -195,7 +208,7 @@
                 max-height: 60px;
                 height: 100%;
                 padding: 30px 20px;
-                a {
+                .url-btn {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -209,9 +222,9 @@
                     height: 100%;
                 }
             }
-            button:hover {
+            .btn-section:hover {
                 background: #00000042;
-                a {
+                .url-btn {
                     color: #fff;
                 }
             }
@@ -226,6 +239,20 @@
         color: #000;
         width: 30%;
         height: 100%;
+        padding: 60px;
+        .container-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            img {
+                max-width: 305px;
+                width: 100%;
+                max-height: 604px;
+                height: 100%;
+            }
+        }
     }
 }
 .section-functions {
@@ -378,7 +405,7 @@
     }
 }
 .section-calcweb {
-    article {
+    .article-calcweb {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -387,7 +414,7 @@
         width: 100%;
         height: 100%;
         color: #000;
-        form {
+        .form-clacweb{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -397,7 +424,7 @@
             max-height: 650px;
             height: 100%;
             border-radius: 15px;
-            border: 2px solid #000;
+            border: none;
             padding: 25px;
             gap: 20px;
             .text-form {
@@ -414,27 +441,29 @@
                 border-radius: 5px;
                 color: #000;
             }
-            button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #004aad;
-                border-radius: 15px;
-                border: none;
-                cursor: pointer;
-                color: #fff;
-                max-width: 280px;
-                width: 100%;
-                max-height: 60px;
-                height: 100%;
-                padding: 30px 20px;
-            }
-            button:hover {
-                background: #5dbde6;
+            .buttom_form {
+                .btn_calcu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #004aad;
+                    border-radius: 15px;
+                    border: none;
+                    cursor: pointer;
+                    color: #fff;
+                    max-width: 280px;
+                    width: 100%;
+                    max-height: 60px;
+                    height: 100%;
+                    padding: 30px 20px;
+                }
+                .btn_calcu:hover {
+                    background: #5dbde6;
+                }
             }
         }
     }
-    aside {
+    .resultado {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -447,10 +476,12 @@
         .container_results {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
             gap: 20px;
-            h3 {
+            h2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -459,7 +490,7 @@
             }
             p {
                 display: flex;
-                text-align: left;
+                text-align: right;
                 width: 100%;
             }
         }
