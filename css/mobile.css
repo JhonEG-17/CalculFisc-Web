@@ -59,8 +59,10 @@
             height: 60%;
             padding: 20px;
             .container-img {
-                img {
-                    width: 250px;
+                .img-muestra {
+                    max-width: 250px;
+                    width: 100%;
+                    height: auto;
                 }
             }
         }
