@@ -14,22 +14,42 @@
     h3 {
         font-size: clamp(14px, 2.5vw, 28px);
     }
-    .section_download {
+    .section-download {
         padding: 15px;
         .article-download {
-            height: 15%;
-        }
-        .aside-download {
             .aling_buttoms {
                 flex-direction: column;
-                gap: 20px;
+                .container_buttoms{
+                    max-width: 300px;
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+                    gap: 10px;
+                    .container-img {
+                        max-width: 70px;
+                        width: 100%;
+                        max-height: 70px;
+                        height: 100%;
+                        
+                    }
+                }
             }
         }
     }
-    footer {
-        .legal {
-            grid-template-columns: auto auto; /* Adaptación para 1 columna en móvil */
-            
+    .footer {
+        .container {
+            .legal {
+                text-align: center;
+                .links-container {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .container-links {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }

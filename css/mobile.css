@@ -47,6 +47,9 @@
             div {
                 padding: 20px 0;
             }
+            .article-footer {
+                justify-content: center;
+            }
         }
         .aside-movil {
             width: 100%;
@@ -126,10 +129,20 @@
         }
     }
 
-    footer {
-        .legal {
-            grid-template-columns: auto auto; /* Adaptación para 1 columna en móvil */
-            
+    .footer {
+        .container {
+            .legal {
+                text-align: center;
+                .links-container {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .container-links {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }
