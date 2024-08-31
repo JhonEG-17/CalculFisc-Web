@@ -28,8 +28,11 @@
             width: 100%;
             height: 40%;
             padding: 20px;
-            div {
-                padding: 20px 0;
+            .text-section {
+                padding: 0;
+            }
+            .article-footer {
+                justify-content: center;
             }
         }
         .aside-desktop {
@@ -44,8 +47,8 @@
             width: 100%;
             height: 40%;
             padding: 20px;
-            div {
-                padding: 20px 0;
+            .text-section {
+                padding: 0;
             }
             .article-footer {
                 justify-content: center;
@@ -55,6 +58,11 @@
             width: 100%;
             height: 60%;
             padding: 20px;
+            .container-img {
+                img {
+                    width: 250px;
+                }
+            }
         }
     }
 

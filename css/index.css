@@ -57,7 +57,7 @@ section{
             .links-container {
                 width: 33.33%;
                 padding: 0 15px;
-                h3 {
+                .title-legal {
                     font-size: 20px;
                     color: #FFFFFF;
                     margin-bottom: 25px;
@@ -66,10 +66,10 @@ section{
                     padding-bottom: 10px;
                     display: inline-block;
                 }
-                ul {
-                    li {
+                .list-legal {
+                    .element-list {
                         list-style: none;
-                        a {
+                        .url-legal {
                             font-size: 18px;
                             text-decoration: none;
                             color: #BBBBBB;
@@ -78,7 +78,7 @@ section{
                             transition: all 05s ease;
                         }
                     }
-                    li:hover {
+                    .element-list:hover {
                         color: #FFFFFF;
                         padding-left: 6px;
                     }
@@ -109,9 +109,12 @@ section{
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
         width: 100%;
         height: 40px;
-        a {
+        .url-copy {
+            width: 100%;
+            height: auto;
             color: #FFFFFF;
             text-decoration: none;
         }
