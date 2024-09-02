@@ -1,7 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1 {
+    font-size: clamp(24px, 4vw, 48px);
+}
+
+h2 {
+    font-size: clamp(16px, 2vw, 32px);
 }
 
 .section-download {
@@ -52,14 +54,14 @@
         width: 100%;
         height: 100%;
         padding: 20px;
-        h2 {
+        .title {
             display: flex;
             justify-content: center;
             text-align: center;
             width: 100%;
             height: auto;
         }
-        p {
+        .text {
             display: flex;
             justify-content: center;
             text-align: center;
@@ -88,14 +90,14 @@
                 height: auto;
                 padding: 20px;
                 gap: 20px;
-                h2 {
+                .subtitle {
                     display: flex;
                     justify-content: center;
                     text-align: center;
                     width: 100%;
                     height: auto;
                 }
-                p {
+                .text {
                     display: flex;
                     text-align: center;
                     width: 100%;
@@ -113,9 +115,12 @@
                     max-height: 130px;
                     height: 100%;
                     padding: 10px;
+                    .icon {
+                        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.726));
+                    }
                     
                 }
-                button {
+                .download_buttoms {
                     display: flex;
                     text-align: center;
                     justify-content: center;
@@ -128,7 +133,7 @@
                     width: 100%;
                     height: auto;
                 }
-                button:hover {
+                .download_buttoms:hover {
                     background-color: #0253bd;
                     cursor: pointer;
                 }

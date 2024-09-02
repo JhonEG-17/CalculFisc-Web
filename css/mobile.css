@@ -28,6 +28,10 @@
             width: 100%;
             height: 40%;
             padding: 20px;
+            .title-section {
+                justify-content: center;
+                align-items: center;
+            }
             .text-section {
                 padding: 0;
             }
@@ -47,6 +51,10 @@
             width: 100%;
             height: 40%;
             padding: 20px;
+            .title-section {
+                justify-content: center;
+                align-items: center;
+            }
             .text-section {
                 padding: 0;
             }
@@ -68,17 +76,25 @@
         }
     }
 
-    .section-functions .functions-list .containers-functions {
-        grid-template-columns: 1fr; /* Adaptación para 1 columna en móvil */
+    .section-functions {
+        padding: 20px;
+        gap: 10px;
+        .functions-list {
+            .containers-functions {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+                grid-template-rows: repeat(2, 1fr); /* 2 filas */
+            }
+        }
     }
 
     .section-result {
         flex-direction: column-reverse;
         .article-result {
+            justify-content: start;
             width: 100%;
             height: 30%;
-            padding: 10px;
-            div {
+            padding: 30px;
+            .result-text {
                 width: 100%;
             }
         }
@@ -95,10 +111,6 @@
                 }
             }
         }
-    }
-
-    .section-total-download .aside-t-d div {
-        font-size: clamp(30px, 5vw, 60px);
     }
 
     .section-calcweb {
@@ -157,11 +169,8 @@
     }
 }
 
-/* Adaptación para dispositivos móviles en modo horizontal */
+/* Estilos para visualización horizontal en dispositivos móviles */
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-    
-
-    
     p {
         font-size: clamp(7px, 1vw, 10px);
     }
@@ -174,26 +183,88 @@
         font-size: clamp(6px, 0.6vw, 9px);
     }
 
-    .section-calcweb {
-        max-width: 100%;
-        article {
-            max-width: 100%;
-            padding: 12px;
-            form {
-                gap: 8px;
-                .element_form {
-                    max-height: 35px;
-                    padding: 8px;
+    .home {
+        padding: 10px;
+        .article-home {
+            padding: 10px;
+            .title-section {
+                h1, h2 {
+                    padding: 10px;
                 }
-                button {
-                    max-width: 160px;
-                    max-height: 35px;
-                    padding: 12px 8px;
+            }
+            .article-footer {
+                padding: 10px;
+                .btn-section {
+                    max-width: 200px;
+                    max-height: 50px;
+                    padding: 20px 10px;
                 }
             }
         }
-        aside {
-            padding: 12px;
+    }
+
+    .section-desktop, .section-movil {
+        padding: 30px;
+        .article-desktop, .article-movil {
+            padding: 20px;
+            .article-footer .btn-section {
+                max-width: 200px;
+                max-height: 50px;
+                padding: 20px 10px;
+            }
+        }
+        .aside-desktop, .aside-movil {
+            padding: 20px;
+            .container-img .img-muestra {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .section-functions {
+        padding: 30px;
+        gap: 15px;
+        .article-functions {
+            gap: 5px;
+        }
+        .functions-list .containers-functions {
+            grid-template-columns: repeat(2, 1fr); /* Reduce la cantidad de columnas */
+            grid-template-rows: repeat(2, 1fr); /* Ajusta el número de filas */
+            .function {
+                max-width: 200px;
+                max-height: 300px;
+                padding: 5px;
+                gap: 3px;
+                .icon {
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+
+    .section-calcweb {
+        padding: 20px;
+        .article-calcweb {
+            .form-clacweb {
+                max-width: 400px;
+                max-height: 500px;
+                padding: 15px;
+                .element_form {
+                    max-height: 40px;
+                    padding: 5px;
+                }
+                .buttom_form .btn_calcu {
+                    max-width: 200px;
+                    max-height: 50px;
+                    padding: 20px 10px;
+                }
+            }
+        }
+        .resultado {
+            padding: 30px;
+            .container_results {
+                gap: 10px;
+            }
         }
     }
 }
