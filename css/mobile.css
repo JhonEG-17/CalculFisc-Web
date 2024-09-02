@@ -172,15 +172,7 @@
 /* Estilos para visualización horizontal en dispositivos móviles */
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
     p {
-        font-size: clamp(7px, 1vw, 10px);
-    }
-    
-    span {
-        font-size: clamp(7px, 1vw, 10px);
-    }
-    
-    a {
-        font-size: clamp(6px, 0.6vw, 9px);
+        font-size: clamp(12px, 1vw, 20px);
     }
 
     .home {
@@ -202,61 +194,94 @@
             }
         }
     }
-
-    .section-desktop, .section-movil {
-        padding: 30px;
-        .article-desktop, .article-movil {
-            padding: 20px;
-            .article-footer .btn-section {
-                max-width: 200px;
-                max-height: 50px;
-                padding: 20px 10px;
+    .section-desktop {
+        flex-direction: row;
+        .article-desktop {
+            width: 40%;
+            height: 100%;
+            padding: 60px;
+            .title-section {
+                justify-content: start;
+                align-items: center;
+            }
+            .text-section {
+                padding: 45px 0;
+            }
+            .article-footer {
+                justify-content: center;
             }
         }
-        .aside-desktop, .aside-movil {
-            padding: 20px;
-            .container-img .img-muestra {
-                max-width: 200px;
+        .aside-desktop {
+            width: 60%;
+            height: 100%;
+            padding: 60px;
+        }
+    }
+    .section-movil {
+        flex-direction: row-reverse;
+        .article-movil {
+            width: 70%;
+            height: 100%;
+            padding: 60px;
+            .title-section {
+                justify-content: start;
+            }
+            .article-footer {
+                justify-content: left;
+            }
+        }
+        .aside-movil {
+            width: 30%;
+            height: 100%;
+            padding: 60px;
+            .container-img {
+                .img-muestra {
+                    max-width: 305px;
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
 
     .section-functions {
-        padding: 30px;
         gap: 15px;
         .article-functions {
             gap: 5px;
         }
         .functions-list .containers-functions {
-            grid-template-columns: repeat(2, 1fr); /* Reduce la cantidad de columnas */
-            grid-template-rows: repeat(2, 1fr); /* Ajusta el número de filas */
+            grid-template-columns: repeat(4, 1fr); /* Reduce la cantidad de columnas */
+            grid-template-rows: repeat(1, 1fr); /* Ajusta el número de filas */
             .function {
                 max-width: 200px;
                 max-height: 300px;
                 padding: 5px;
                 gap: 3px;
                 .icon {
-                    max-width: 80px;
+                    max-width: 40px;
                 }
             }
         }
     }
 
     .section-calcweb {
-        padding: 20px;
+        flex-direction: row;
         .article-calcweb {
             .form-clacweb {
                 max-width: 400px;
-                max-height: 500px;
+                max-height: 250px;
                 padding: 15px;
+                gap: 10px;
                 .element_form {
-                    max-height: 40px;
+                    max-height: 30px;
                     padding: 5px;
                 }
-                .buttom_form .btn_calcu {
-                    max-width: 200px;
-                    max-height: 50px;
-                    padding: 20px 10px;
+                .buttom_form {
+                    .btn_calcu {
+                        max-width: 200px;
+                        max-height: 50px;
+                        padding: 20px 10px;
+                    }
                 }
             }
         }
@@ -264,6 +289,50 @@
             padding: 30px;
             .container_results {
                 gap: 10px;
+            }
+        }
+    }
+    
+    .section-result {
+        flex-direction: row-reverse;
+        .article-result {
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            padding: 60px;
+            .result-text {
+                width: 100%;
+            }
+        }
+        .aside-result {
+            width: 50%;
+            height: 100%;
+            padding: 30px;
+            .circle-wrap {
+                max-width: 200px;
+                max-height: 200px;
+                .circle {
+                    .inside-circle {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            .legal {
+                text-align: start;
+                .links-container {
+                    width: 33.33%;
+                    margin-bottom: 0;
+                }
+                .container-links {
+                    display: flex;
+                    justify-content: start;
+                }
             }
         }
     }
